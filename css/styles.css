@@ -1,22 +1,72 @@
-.container {
-  max-width: 95%;
-  margin-right: auto;
-  margin-left: auto;
-}
+/*  === GLOBAL === */
+
+    :root {
+        /*  === COLORS === */
+        --primer-color: #f7a1e8;
+        
+        --dark: #222222;
+        --light: #fbfbfb;
+
+        /*  === FONTS === */
+        --primer-font: Arial;
+        --secunder-font: Helvetica;
+        --fallback-font: sans-serif;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        margin: 0;
+        font-family: var(--primer-font, --secunder-font, --fallback-font);
+        background-color: var(--dark);
+        color: var(--light);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+/*  === GENERAL === */
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .container {
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    }
 
 /* NAVBAR */
 
-#desktop-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+    #desktop-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
 
-#desktop-nav ul > li {
-    margin: 10px;
-}
+    #desktop-nav ul > li {
+        margin: 1.5rem;
+    }
 
-#desktop-nav ul > li > a {
-    text-decoration: none;
-}
+    #desktop-nav ul > li > a {
+        text-decoration: none;
+        color: var(--light);
+    }
+
+        #desktop-nav ul > li > a:link,
+        #desktop-nav ul > li > a:visited,
+        #desktop-nav ul > li > a:active {
+            color: var(--light);
+        }
+
+        #desktop-nav ul > li > a:hover {
+            color: var(--primer-color);
+            text-decoration: underline;
+        }
