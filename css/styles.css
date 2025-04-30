@@ -1,0 +1,22 @@
+.container {
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* NAVBAR */
+
+#desktop-nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#desktop-nav ul > li {
+    margin: 10px;
+}
+
+#desktop-nav ul > li > a {
+    text-decoration: none;
+}
