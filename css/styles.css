@@ -48,6 +48,42 @@
     margin-left: auto;
     }
 
+/* HERO */
+    #hero {
+        color: var(--light);
+        padding: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #hero h1 {
+        margin: 0 0 2.5rem 0;
+        color: transparent;
+        padding: 0;
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 1000;
+        background-image: repeating-linear-gradient(-45deg, var(--light) 2%, var(--primer-color) 10%, var(--light) 12%);
+        background-size: 400%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-gardient 15s linear infinite;
+    }
+
+        @keyframes animate-gardient {
+            0% {
+                background-position: 0%;
+            }
+            50% {
+                background-position: 100%;
+            }
+            100% {
+                background-position: 0%;
+            }
+        }
+
+
 /* BUTTONS */
 
 .btn-primer {
