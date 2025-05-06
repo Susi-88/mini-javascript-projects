@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>ToDo List</title>
+        <title>Calculator</title>
 
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
         <link rel="stylesheet" type="text/css" href="../css/calculator-styles.css">
@@ -31,14 +31,33 @@
                     <p>Welcome to the Calculator application! Here you can perform basic arithmetic operations.</p>
                 </div>
                 
-            
-
-                <div class="calculator-container">
-
-                    
-                    
+                <div id="calculator">
+                    <input type="text" id="display" placeholder="display" readonly>
+                    <input type="text" id="result" placeholder="result" readonly>
+                    <div id="buttons">
+                        <button class="highlight" onclick="clearDisplay()">AC</button>
+                        <button class="highlight" onclick="">DEL</button>
+                        <button class="highlight" onclick="appendToDisplay('%')">%</button>
+                        <button class="highlight" onclick="appendToDisplay('/')">/</button>
+                        <button onclick="appendToDisplay('7')">7</button>
+                        <button onclick="appendToDisplay('8')">8</button>
+                        <button onclick="appendToDisplay('9')">9</button>
+                        <button class="highlight" onclick="appendToDisplay('*')">*</button>
+                        <button onclick="appendToDisplay('4')">4</button>
+                        <button onclick="appendToDisplay('5')">5</button>
+                        <button onclick="appendToDisplay('6')">6</button>
+                        <button class="highlight" onclick="appendToDisplay('-')">-</button>
+                        <button onclick="appendToDisplay('1')">1</button>
+                        <button onclick="appendToDisplay('2')">2</button>
+                        <button onclick="appendToDisplay('3')">3</button>
+                        <button class="highlight" onclick="appendToDisplay('+')">+</button>
+                        <button onclick="appendToDisplay('0')">0</button>
+                        <button onclick="appendToDisplay('00')">00</button>
+                        <button class="highlight" onclick="appendToDisplay('.')">.</button>
+                        <button id="equal" class="highlight" onclick="calculateResult()">=</button>
+                    </div>
                 </div>
-
+                         
             </div>
             
         </main>

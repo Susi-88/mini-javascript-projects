@@ -1,7 +1,91 @@
- /* HERO */
+/* HERO */
     #hero {
         color: var(--light);
         padding: 1rem;
         text-align: center;
         font-size: 1.2rem;
     }
+
+/* CALCULATOR */
+
+    #calculator {
+        margin: auto;
+        width: 60%;
+        max-width: 400px;
+        background-color: var(--secunder-color);
+        border-radius: 5px;
+        padding: 1.5rem;
+        box-shadow: 1px .5px 1px 0 var(--secunder-color), 4px 4px 15px 0 rgb(0, 0, 0);
+    }
+
+    #calculator input {
+        width: 100%;
+        font-size: 1.2rem;
+        background-color: var(--light);
+        color: var(--dark);
+        text-align: right;
+        padding: .5rem;
+        border: none;
+        box-shadow: 2px 2px 2px 0 var(--primer-color);
+    }
+
+    #calculator input:first-of-type {
+        border-radius: 5px 5px 0 0;
+    }
+
+    #calculator input:last-of-type {
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 1.2rem;
+    }
+
+    #buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    #buttons button {
+        padding: .8rem;
+        background-color: var(--dark);
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px .5px 1px 0 var(--secunder-color), 2px 2px 2px 0 var(--primer-color);
+    }
+
+    #buttons button {
+        padding: .8rem;
+        font-size: 1.2rem;
+        background-color: var(--dark);
+        color: var(--light);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 0 var(--primer-color);
+    }
+
+    #buttons .highlight {
+        color: var(--primer-color);
+        background-color: rgba(var(--dark-rgb), 0.6);
+        font-weight: bolder;
+    }
+
+    #buttons button:hover {
+        background-color: var(--primer-color);
+        color: var(--light);
+        box-shadow: 2px 2px 2px 0 black;
+        cursor: pointer;
+    }
+
+    #buttons #equal {
+        background-color: var(--primer-color);
+        color: var(--light);
+        box-shadow: 2px 2px 2px 0 black;
+    }
+
+    #buttons #equal:hover {
+        background-color: black;
+        color: var(--primer-color);
+        box-shadow: 2px 2px 2px 0 var(--primer-color);
+
+    }
+
