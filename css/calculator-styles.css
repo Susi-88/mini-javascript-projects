@@ -1,21 +1,48 @@
 /* HERO */
     #hero {
         color: var(--light);
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
         font-size: 1.2rem;
     }
 
+    #hero h1 {
+        margin: 0 0 2.5rem 0;
+        color: transparent;
+        padding: 0;
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 1000;
+        background-image: repeating-linear-gradient(-45deg, var(--light) 2%, var(--primer-color) 10%, var(--light) 12%);
+        background-size: 400%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-gardient 10s linear infinite;
+    }
+
+        @keyframes animate-gardient {
+            0% {
+                background-position: 0%;
+            }
+            50% {
+                background-position: 100%;
+            }
+            100% {
+                background-position: 0%;
+            }
+        }
+
 /* CALCULATOR */
 
     #calculator {
-        margin: auto;
+        margin: 1rem auto 5rem auto;
         width: 60%;
         max-width: 400px;
         background-color: var(--secunder-color);
         border-radius: 5px;
         padding: 1.5rem;
-        box-shadow: 1px .5px 1px 0 var(--secunder-color), 4px 4px 15px 0 rgb(0, 0, 0);
+        box-shadow: 1px .5px 1px 0 var(--secunder-color), 10px 10px 20px 10px rgb(0, 0, 0);
     }
 
     #calculator input {
@@ -29,13 +56,20 @@
         box-shadow: 2px 2px 2px 0 var(--primer-color);
     }
 
+    #calculator input:focus {
+        outline: none;
+    }
+
     #calculator input:first-of-type {
         border-radius: 5px 5px 0 0;
+        font-size: 2rem;
+        padding-top: 1rem;
     }
 
     #calculator input:last-of-type {
         border-radius: 0 0 5px 5px;
         margin-bottom: 1.2rem;
+        padding-bottom: 1rem;
     }
 
     #buttons {
