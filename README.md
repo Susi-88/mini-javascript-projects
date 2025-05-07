@@ -1,41 +1,81 @@
-# 👋 Hello developer!
-This project contains a basic HTML structure to get you started. Check our [tutorials for frontend development](https://www.w3schools.com/where_to_start.asp) to learn the basics of [HTML](https://www.w3schools.com/html/default.asp) and [CSS](https://www.w3schools.com/css/default.asp). 🦄
+# JavaScript Mini Projects Webpage
 
 
-## 🏗 What's next?
+## English
 
-Build your project however you like using HTML, CSS and JavaScript. 
+Welcome to my **JavaScript Mini Projects** repository!  
+This website serves as my personal practice platform to improve my skills in **HTML**, **CSS**, and especially **JavaScript**.
 
-Use these four files as your starting point:
+### 🚀 Features
 
-- **README.md:** This is the file that you are reading now. You can change the text in this file to leave information to others about your website - or delete it.
-- **index.html:** This is the default page for your space, where you write HTML, the standard markup language for creating web pages.
-- **styles.css:** Use the CSS file to style your content and change the look of your space with beautiful colors, fonts and much more. 
-- **scripts.js:** Use this file to make your website dynamic and interactive with JavaScript. 
+- **Homepage:** Overview of all mini projects with previews and navigation.
+- **Interactive Projects:** Click on a project to try it out directly in your browser.
+- **AI-generated Content:** Texts and images are generated with the help of AI, some of which I edited and integrated into the site.
 
-> **Note:** The **styles.css** and **scripts.js** files link into the **index.html** file so that they are all connected.
+### 🧩 Current Projects
+
+- **Calculator** – A simple calculator
+- **ToDo List** – Manage and check off your tasks
+
+### 🛠️ Planned Projects
+
+The following projects are already planned and will be added soon (marked as "Coming Soon" in the main menu):
+
+- Weather App
+- Digital Clock
+- Notebook
+- ...and many more!
+
+Finished projects may receive updates with more content or functionality.
+
+### 💡 Project Purpose
+
+This repository is my playground for JavaScript experiments.  
+I want to develop various small applications to improve my skills and try out new ideas.
+
+### 📑 Preview
+
+https://www.w3profile.com/zsuzsanna-benkoe -> Spaces (https://mini-javascript-projects.w3spaces.com/)
 
 
-## 🎨 Where to find everything
-
-- **Fonts:** Add your favorite from **Google fonts**.  
-	[Go to tutorial about fonts](https://www.w3schools.com/w3css/w3css_fonts_google.asp)
-
-- **Icons:** Add icons with **Fontawesome** and their free library.  
-	[Go to tutorial about Fontawesome](https://www.w3schools.com/icons/fontawesome5_intro.asp)
-
-- **Images:** Upload images and add their URLs to your code.  
-	[Go to article about how to upload files](https://support.w3schools.com/hc/en-gb/articles/4410414928017)
-
-> ⚡️ **Tip:** [Set up Google Analytics](https://www.w3schools.com/howto/howto_google_analytics.asp) to get valuable insights about your space and visitors. 
-	
-
-### ⛑ Need support?
-[Join our Discord community](https://discord.gg/6Z7UaRbUQM) and ask questions in the **#spaces-general** channel.
+**Have fun exploring!**  
+Feedback and suggestions are always welcome.
 
 
-### 🚀 Upgrade to Pro
-[Upgrade your account](https://billing.w3schools.com/products/spaces) to boost your space and take your projects to the next level; more requests, more storage and more power for up to 10 spaces.
+---
+
+## Deutsch
+
+Willkommen zu meinem **JavaScript Mini-Projekte**-Repository!  
+Diese Webseite dient als persönliche Übungsplattform, um meine Kenntnisse in **HTML**, **CSS** und vor allem **JavaScript** zu vertiefen.
+
+### 🚀 Features
+
+- **Startseite:** Übersicht aller Mini-Projekte mit Vorschau und Navigation.
+- **Interaktive Projekte:** Klicke auf ein Projekt, um es direkt im Browser auszuprobieren.
+- **KI-generierte Inhalte:** Texte und Bilder wurden mithilfe von KI erstellt, teilweise nachbearbeitet und in die Seite integriert.
+
+### 🧩 Aktuelle Projekte
+
+- **Calculator** – Ein einfacher Taschenrechner
+- **ToDo Liste** – Aufgaben verwalten und abhaken
+
+### 🛠️ Geplante Projekte
+
+Folgende Projekte sind bereits in Planung und werden bald hinzugefügt (im Hauptmenü mit "Coming Soon" markiert):
+
+- WetterApp
+- Digitale Uhr
+- Notizbuch
+- ...und viele weitere!
+
+Bereits fertige Projekte können Updates erhalten, um zusätzliche Inhalte oder Funktionen zu bieten.
+
+### 💡 Ziel des Projekts
+
+Dieses Repository ist eine Spielwiese für meine JavaScript-Experimente.  
+Ich möchte verschiedene kleine Anwendungen entwickeln, um meine Fähigkeiten zu verbessern und Neues auszuprobieren.
 
 
-Happy learning!
+### 📑 Vorschau
+https://www.w3profile.com/zsuzsanna-benkoe -> Spaces (https://mini-javascript-projects.w3spaces.com/)
