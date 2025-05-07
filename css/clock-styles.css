@@ -97,3 +97,86 @@
     #sec::after {
         content: "SEC";
     }
+
+
+/* ANALOG CLOCK */
+
+    #analog-clock {
+        width: 400px;
+        height: 400px;
+        margin: 4rem auto;
+        background-color: rgba(var(--primer-color-rgb), 0.9);
+        box-shadow: inset 0 0 40px 5px var(--secunder-color), inset 0 0 20px 1px var(--secunder-color), 0 0 5px 0 var(--secunder-color), 0 0 40px 30px var(--dark);
+        border: 10px solid var(--secunder-color);
+        border-radius: 50%;
+        position: relative;
+    }
+
+    #analog-clock::after {
+        content: "";
+        position: absolute;
+        background-color: var(--light);
+        width: 20px;
+        height: 20px;
+        transform: translate(-50%);
+        border-radius: 50%;
+        top: 47.5%;
+        left: 50%;
+        box-shadow: inset 0 0 8px var(--secunder-color), 0 0 2px var(--secunder-color), 0 0 10px var(--secunder-color);
+        z-index: 20;
+    }
+
+    #analog-clock .number {
+        --rotation: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: rotate(var(--rotation));
+        padding-top: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 0 0 1px var(--light), 0 0 10px var(--dark);
+    }
+
+        #analog-clock .number1   {--rotation:  30deg;  }
+        #analog-clock .number2   {--rotation:  60deg;  }
+        #analog-clock .number3   {--rotation:  90deg;  }
+        #analog-clock .number4   {--rotation:  120deg; }
+        #analog-clock .number5   {--rotation:  150deg; }
+        #analog-clock .number6   {--rotation:  180deg; }
+        #analog-clock .number7   {--rotation:  210deg; }
+        #analog-clock .number8   {--rotation:  240deg; }
+        #analog-clock .number9   {--rotation:  270deg; }
+        #analog-clock .number10  {--rotation:  300deg; }
+        #analog-clock .number11  {--rotation:  330deg; }
+
+
+    #analog-clock .hand {
+        --rotation: 0;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        border-radius: 10px 10px 0 0;
+        background-color: var(--light);
+        transform-origin: bottom;
+        transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+        box-shadow: inset 0 0 4px var(--secunder-color), 0 0 10px var(--secunder-color);
+        z-index: 10;
+    }
+
+    #analog-clock #sec-hand {
+        width: 3px;
+        height: 45%;
+        background-color: var(--dark);
+        box-shadow: 0 0 2px var(--dark), 0 0 10px var(--secunder-color);
+    }
+
+    #analog-clock #min-hand {
+        width: 7px;
+        height: 45%;
+    }
+
+    #analog-clock #hour-hand {
+        width: 10px;
+        height: 40%;
+    }
