@@ -1,37 +1,57 @@
  #hero {
-        width: 95%;
         padding: 3rem;
-        margin: 5rem auto;
+        margin: 5rem auto 7rem auto;
         border-radius: 20px;
         background-color: var(--secunder-color);
         box-shadow: 0 0 30px 0 var(--primer-color);
     }
 
     #project-container {
-        width: 75%;
-        margin: 4rem auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
     }
 
     .project-box {
-        width: 80%;
+        flex: 1 1 30%;
         padding: 3rem;
-        margin-bottom: 6rem;
         border-radius: 20px;
         background-color: var(--secunder-color);
-        box-shadow: -3px 2px 3px 0 var(--secunder-color), -10px 8px 30px 0 var(--primer-color);
-    }
-
-    .project-box:nth-of-type(even) {
-        margin-left: 20%;
-        text-align: right;
-        box-shadow: 3px 2px 3px 0 var(--secunder-color), 10px 8px 30px 0 var(--primer-color);
+        text-align: center;
+        position: relative;
     }
 
     .project-box:hover {
         box-shadow: 0 0 50px 0 var(--primer-color);
     }
 
-    .project-box h1,
     .project-box h2 {
         margin-top: 0;
+        color: var(--primer-color);
+    }
+
+    .project-box p {
+        margin-bottom: 2rem;
+    }
+    
+    .coming-soon::after {
+        content: 'Coming Soon!';
+        display: block;
+        font-size: 1.5rem;
+        color: var(--primer-color);
+        background-color: var(--dark);
+        border: .3rem solid var(--primer-color);
+        padding: 1rem;
+        border-radius: 10px;
+        transform: rotatez(-15deg);
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        width: 80%;
+    }
+
+    .coming-soon a {
+        display: none;
     }
