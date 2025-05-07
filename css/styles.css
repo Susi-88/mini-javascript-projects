@@ -3,11 +3,14 @@
     :root {
         /*  === COLORS === */
         --primer-color: #f815d2;
+        --primer-color-rgb: 248, 21, 210;
         --secunder-color: #383838;
+        --secunder-color-rgb: 56, 56, 56;
         
         --dark: #222222;
         --dark-rgb: 34, 34, 34;
         --light: #fbfbfb;
+        --light-rgb: 251, 251, 251;
 
         /*  === FONTS === */
         --primer-font: Arial;
@@ -102,6 +105,24 @@
     border: 2px solid var(--primer-color);
     color: var(--primer-color);
 }
+
+.btn-secunder {
+    padding: .5rem;
+    background-color:transparent;
+    color: var(--primer-color);
+    border: 2px solid var(--primer-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-secunder:hover {
+    background-color: var(--primer-color);
+    border: 2px solid var(--primer-color);
+    color: var(--light);
+}
+
 
 /* NAVBAR */
 
