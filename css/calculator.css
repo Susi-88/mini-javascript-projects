@@ -7,7 +7,10 @@
         background-color: var(--secunder-color);
         border-radius: 5px;
         padding: 1.5rem;
-        box-shadow: 1px .5px 1px 0 var(--secunder-color), 10px 10px 20px 10px rgb(0, 0, 0);
+        box-shadow: 1px .5px 1px 0 var(--secunder-color), 
+                    10px 10px 20px 10px rgb(0, 0, 0),
+                    inset 2px 2px 5px rgba(var(--light-rgb), 0.4),
+                    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
     }
 
     #calculator input {
@@ -18,7 +21,6 @@
         text-align: right;
         padding: .5rem;
         border: none;
-        box-shadow: 2px 2px 2px 0 var(--primer-color);
     }
 
     #calculator input:focus {
@@ -29,12 +31,14 @@
         border-radius: 5px 5px 0 0;
         font-size: 2rem;
         padding-top: 1rem;
+        box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.5);
     }
 
     #calculator input:last-of-type {
         border-radius: 0 0 5px 5px;
         margin-bottom: 1.2rem;
         padding-bottom: 1rem;
+        box-shadow: inset 4px -3px 3px rgba(0, 0, 0, 0.5);
     }
 
     #buttons {
@@ -45,21 +49,15 @@
 
     #buttons button {
         padding: .8rem;
-        background-color: var(--dark);
-        color: var(--light);
-        border: none;
-        border-radius: 5px;
-        box-shadow: 1px .5px 1px 0 var(--secunder-color), 2px 2px 2px 0 var(--primer-color);
-    }
-
-    #buttons button {
-        padding: .8rem;
         font-size: 1.2rem;
         background-color: var(--dark);
         color: var(--light);
         border: none;
         border-radius: 5px;
-        box-shadow: 2px 2px 2px 0 var(--primer-color);
+        box-shadow: 1px .5px 1px var(--secunder-color), 
+                    2px 2px 3px var(--primer-color),
+                    inset 2px 2px 3px rgba(var(--light-rgb), 0.4),
+                    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
     }
 
     #buttons .highlight {
@@ -71,20 +69,26 @@
     #buttons button:hover {
         background-color: var(--primer-color);
         color: var(--light);
-        box-shadow: 2px 2px 2px 0 black;
         cursor: pointer;
+        box-shadow: 2px 2px 3px var(--dark),
+                    inset -2px -2px 3px rgba(var(--light-rgb), 0.4),
+                    inset 3px 3px 5px rgba(0, 0, 0, 0.5);
     }
 
     #buttons #equal {
         background-color: var(--primer-color);
         color: var(--light);
-        box-shadow: 2px 2px 2px 0 black;
+        box-shadow: 2px 2px 4px var(--dark),
+                    inset 2px 2px 3px rgba(var(--light-rgb), 0.4),
+                    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
     }
 
     #buttons #equal:hover {
-        background-color: black;
+        background-color: var(--dark);
         color: var(--primer-color);
-        box-shadow: 2px 2px 2px 0 var(--primer-color);
+        box-shadow: 2px 2px 4px var(--primer-color),
+                    inset -2px -2px 3px rgba(0, 0, 0, 0.5),
+                    inset 3px 3px 5px rgba(0, 0, 0, 0.5);
 
     }
 
