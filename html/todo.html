@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -31,29 +31,59 @@
                     <p>Welcome to the ToDo List application! Here you can manage your tasks efficiently.</p>
                 </div>
 
-                <form id="todo-input-container" onsubmit="addTodo()">
-                    <div id="todo-input-box">
-                        <label for="todo-input" class="screenreader">Add a new ToDo:</label>
-                        <input id="todo-input" type="text" placeholder="Add a new ToDo...">
-                    </div>
-                    <div id="todo-input-btns">
-                        <button id="todo-submit-btn" class="btn-primer" type="submit" name="todo-submit-btn">Submit</button>
-                    </div>
-                </form>
 
 
-                <div id="todo-list-container">
-                    <h2>ToDo List</h2>
-                    <ul id="todo-list">
-                    </ul>
+                <div class="todo-container">
+
+                    <div class="todo-box">
+                        <div class="todo-intro-container">
+                            <h2>ToDo List</h2>
+                            <p>
+                                You can add a new ToDo task using the "Submit" button or by pressing Enter. You can also mark tasks as completed or delete them from the list.
+                            </p>
+                        </div>
+                        
+                        <form class="todo-input-area">
+                            <input id="simple-todo-input" type="text" placeholder="Add a new ToDo...">
+                            <button id="simple-todo-submit-btn" class="btn-primer" type="submit" name="simple-todo-submit-btn">Submit</button>
+                        </form>
+
+                        <div class="todo-list-container">
+                            <ul id="simple-todo-list">
+                                <li>sfkdjsgik</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="todo-box">
+                        <div class="todo-intro-container">
+                            <h2>ToDo List with Progress Bar</h2>
+                            <p>
+                                You can add a new ToDo task using the "Submit" button or by pressing Enter. You can also mark tasks as completed, delete them from the list, or edit existing entries. Below is a progress bar showing how you are progressing with your tasks.
+                            </p>
+                        </div>
+                        
+                        <form class="todo-input-area">
+                            <input id="progress-todo-input" type="text" placeholder="Add a new ToDo...">
+                            <button id="progress-todo-submit-btn" class="btn-primer" type="submit" name="progress-todo-submit-btn">Submit</button>
+                        </form>
+
+                        <div class="todo-list-container">
+                            <ul id="progress-todo-todo-list">
+                                <li>sfkdjsgik</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
                 </div>
-                
             </div>
             
         </main>
 
         <script src="../js/todo.js"></script>
-
     </body>
 
 </html>
