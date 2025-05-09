@@ -1,6 +1,6 @@
  #hero {
         padding: 3rem;
-        margin: 5rem auto 7rem auto;
+        margin: 4rem auto 7rem auto;
         border-radius: 20px;
         background-color: var(--secunder-color);
         box-shadow: 0 0 30px 0 var(--primer-color);
