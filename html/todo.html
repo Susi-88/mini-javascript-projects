@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -26,7 +26,7 @@
         <main>
             <div class="container">
 
-                <div id="hero">
+                <div id="hero"  style="display: none;">
                     <h1>ToDo List</h1>
                     <p>Welcome to the ToDo List application! Here you can manage your tasks efficiently.</p>
                 </div>
@@ -58,8 +58,20 @@
                         <div class="todo-intro-container">
                             <h2>ToDo List with Progress Bar</h2>
                             <p>
-                                You can add a new ToDo task using the "Submit" button. You can also mark tasks as completed, delete them from the list, or edit existing entries. Below is a progress bar showing how you are progressing with your tasks.
+                                You can add a new ToDo task using the "Submit" button or pressing Enter. You can also mark tasks as completed, delete them from the list, or edit existing entries. Below is a progress bar showing how you are progressing with your tasks.
                             </p>
+                        </div>
+
+                        <div id="progress-bar-container">
+                           <div class="details">
+                                <h3>Keep it Up!</h3>
+                                <div id="progressbar">
+                                    <div id="progress"></div>
+                                </div>
+                           </div> 
+                           <div class="stats-number">
+                                <p id="numbers">0 / 0</p>
+                           </div>
                         </div>
                         
                         <form class="todo-input-area" onsubmit="event.preventDefault();">
@@ -68,7 +80,7 @@
                         </form>
 
                         <div class="todo-list-container">
-                            <ul id="progress-todo-todo-list">
+                            <ul id="progress-todo-list">
                             </ul>
                         </div>
                     </div>
