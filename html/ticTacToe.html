@@ -1,45 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Tic Tac Toe</title>
+    <title>Tic Tac Toe</title>
 
-        <link rel="stylesheet" type="text/css" href="../css/styles.css">
-        <link rel="stylesheet" type="text/css" href="../css/ticTacToe.css">
-        
-    </head>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/ticTacToe.css">
 
-    <body>
+</head>
 
-        <header>
-            <nav id="navbar">
-                <div id="desktop-nav" class="container">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                    </ul>
-                </div>               
-            </nav>
-        </header>
+<body>
 
-        <main>
-            <div class="container">
-
-                <div id="hero">
-                    <h1>Tic Tac Toe Game</h1>
-                    <p>Welcome to the Tic Tac Toe game! This is a simple implementation of the classic game where two players take turns marking X and O on a 3x3 grid. The first player to get three in a row wins!</p>
-                </div>
-                
-                
-                         
+    <header>
+        <nav id="navbar">
+            <div id="desktop-nav" class="container">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
             </div>
-            
-        </main>
+        </nav>
+    </header>
 
-        <script src="../js/ticTacToe.js"></script>
+    <main>
+        <div class="container">
 
-    </body>
+            <div id="hero">
+                <h1>Tic Tac Toe Game</h1>
+                <p>Welcome to the Tic Tac Toe game! This is a simple implementation of the classic game where two
+                    players take turns marking X and O on a 3x3 grid. The first player to get three in a row wins!</p>
+            </div>
+
+            <div id="ticTacto-container">
+
+                <!-- Select player section -->
+                <div id="ticTacto-header">
+                    <h2>Select which you want to be?</h2>
+                    <div class="options">
+                        <button id="player-x" class="btn-primer">Player (x)</button>
+                        <button id="player-o" class="btn-primer">Player (o)</button>
+                    </div>
+                </div>
+
+                <!-- Game board section -->
+                <div id="ticTacto-board">
+                    <div class="details">
+                        <div class="players">
+                            <span id="Xturn" class="active">X's Turn</span>
+                            <span id="Oturn">O's Turn</span>
+                        </div>
+                    </div>
+
+                    <section>
+                        <span class="box1"></span>
+                        <span class="box2"></span>
+                        <span class="box3"></span>
+                    </section>
+                    <section>
+                        <span class="box4"></span>
+                        <span class="box5"></span>
+                        <span class="box6"></span>
+                    </section>
+                    <section>
+                        <span class="box7"></span>
+                        <span class="box8"></span>
+                        <span class="box9"></span>
+                    </section>
+
+                </div>
+
+                <button id="reset-button" class="btn-primer">Reset Game</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../js/ticTacToe.js"></script>
+
+</body>
 
 </html>

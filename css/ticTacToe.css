@@ -1,0 +1,92 @@
+ /* CONTAINER */
+    #ticTacto-container {
+        width: 60%;
+        margin: auto auto 4rem auto;
+        padding: 2rem;
+        text-align: center;
+        background-color: var(--secunder-color);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9),
+                    inset 4px 4px 7px rgba(255, 255, 255, 0.3),
+                    inset -5px -5px 7px rgba(0, 0, 0, 0.5);
+    }
+
+/* SELECT PLAYER SECTION */
+    #ticTacto-container #ticTacto-header {
+        display: none;
+    }
+
+    #ticTacto-container #ticTacto-header h2{
+        text-shadow: 2px 2px 10px var(--primer-color);
+    }
+
+
+
+        /* BUTTONS */
+            #ticTacto-container button {
+                border-radius: 5px;
+                padding: .5rem 1rem;
+                border: none;
+                box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+                            inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+                            inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+            }
+
+            #ticTacto-container button:hover {
+                border: none;
+                    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+                                inset 2px 2px 5px rgba(var(--primer-color-rgb), 0.5),
+                                inset -3px -3px 5px rgba(var(--primer-color-rgb), 0.5);
+            }
+
+/* GAME BOARD SECTION */
+    #ticTacto-board {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #ticTacto-board .players {
+        margin: 0 auto 2rem auto;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--primer-color);
+        border-radius: 5px;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9),
+                    inset 3px 3px 5px rgba(255, 255, 255, 0.7),
+                    inset -4px -4px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #ticTacto-board .players #Xturn,
+    #ticTacto-board .players #Oturn {
+        width: 140px;
+        padding: .8rem;
+        border-radius: 5px;
+        margin: .8rem;
+        /* box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.9),
+                    inset 3px 3px 5px rgba(255, 255, 255, 0.7),
+                    inset -4px -4px 5px rgba(0, 0, 0, 0.5); */
+    }
+
+    #ticTacto-board .players .active {
+        background-color: var(--secunder-color);
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.9),
+                    inset 3px 3px 5px rgba(255, 255, 255, 0.7),
+                    inset -4px -4px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #ticTacto-board section {
+        display: flex;
+        justify-content: center;
+    }
+
+    #ticTacto-board section span {
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-color: var(--primer-color);
+        border: 3px solid var(--secunder-color);
+        border-radius: 5px;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9),
+                    inset 3px 3px 5px rgba(255, 255, 255, 0.7),
+                    inset -4px -4px 5px rgba(0, 0, 0, 0.5);
+    }
