@@ -1,4 +1,4 @@
- /* CONTAINER */
+/* CONTAINER */
     #ticTacto-container {
         width: 60%;
         margin: auto auto 4rem auto;
@@ -42,6 +42,7 @@
     #ticTacto-board {
         margin-top: 2rem;
         margin-bottom: 2rem;
+        display: none;
     }
 
     #ticTacto-board .players {
@@ -89,4 +90,28 @@
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9),
                     inset 3px 3px 5px rgba(255, 255, 255, 0.7),
                     inset -4px -4px 5px rgba(0, 0, 0, 0.5);
+        font-size: 4rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        line-height: 100px;
+    }
+
+    #reset-button {
+        margin-top: 2rem;
+    }
+
+/* RESULT SECTION */
+
+    #result-message {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #result-message span {
+        font-weight: bolder;
+        margin: 0 0.4rem;
+    }
+
+    #play-again-button {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
